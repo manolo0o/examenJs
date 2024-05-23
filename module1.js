@@ -41,4 +41,18 @@ const moviesPerYear = async() => {
 	return dataUpdate;
 }
 
+console.log( moviesPerYear()); 
+
 // Filtrar películas por actor.
+
+const moviesPerActor = async() => {    
+    let data = await res.json();
+    let dataUpdate = data.map(val => {
+        return {
+            title: val.TITLE,
+            year: val.YEAR,
+            actors: val.ACTORS
+        }
+    });
+    return dataUpdate;
+}

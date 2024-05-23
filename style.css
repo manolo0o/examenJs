@@ -413,6 +413,14 @@ main .data {
 	margin-top: 20px;
 	flex-wrap: wrap;
 }
+/*------------------------------------*/
+main .querie1{
+	width: 100%;
+	padding: 2rem;
+	border: solid .2rem var(--dark-blue);
+	border-radius: .5rem;
+
+}
 main .data .content-data {
 	flex-grow: 1;
 	flex-basis: 400px;
